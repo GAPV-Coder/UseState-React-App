@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&display=swap');
+
+.App {
+  width: 1000px;
+  padding: 5px;
+  margin-top: 200px;
+  margin-left: 190px;
+  border-radius: 10px;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.quoteContainer {
+  color: white;
+  justify-content: center;
 }
+
+.btns a {
+  margin: 30px;
+  font-size: xx-large;
+  color: rgb(20, 119, 218);
+  padding-top: 5px;
+}
+.btn {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+.btn-f {
+  font-size: small;
+  font-weight: 500;
+}
+
+button {    
+  border: 0px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(237, 244, 245, 0.322);
+  outline: none;
+  cursor:pointer;
+  padding: 10px;
+  margin-left: 80%;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.authors {
+  margin-left: 70%;
+  font-size: .5rem;
+}
+
+.quotes {
+  justify-content: center;
+}
+
+
+
+/* Media Querys */
+
+@media (min-width: 576px) {
+  .quoteContainer .quotes {
+    font-size: 24px;
+  }
+
+  .quoteContainer .authors {
+    font-size: 18px;
+  }
+
+  .quoteContainer .fa-quote-left,
+  .quoteContainer .fa-quote-right {
+    font-size: 26px;
+  }
+
+  .quoteContainer .fa-quote-left {
+    top: 20px;
+  }
+
+  .quoteContainer .fa-quote-right {
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .quoteContainer {
+    padding: 35px;
+  }
+
+  .quoteContainer .quotes {
+    font-size: 26px;
+  }
+
+  .quoteContainer .authors {
+    font-size: 20px;
+  }
+
+  .quoteContainer .fa-quote-left,
+  .quoteContainer .fa-quote-right {
+    font-size: 28px;
+  }
+
+  .quoteContainer .fa-quote-left {
+    top: 25px;
+  }
+
+  .quoteContainer .fa-quote-right {
+    bottom: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quoteContainer .quotes {
+    font-size: 28px;
+    width: 85%;
+  }
+
+  .quoteContainer .authors {
+    font-size: 24px;
+  }
+
+  .quoteContainer .fa-quote-left,
+  .quoteContainer .fa-quote-right {
+    font-size: 30px;
+  }
+
+  .quoteContainer .fa-quote-left {
+    top: 28px;
+  }
+
+  .quoteContainer .fa-quote-right {
+    bottom: 28px;
+  }
+}
+
+
+
